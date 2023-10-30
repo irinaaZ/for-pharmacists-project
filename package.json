@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gulp-live-server": "^0.0.31",
+    "sass": "^1.69.5"
+  }
+}

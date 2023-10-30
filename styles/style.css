@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1920px;
+    height: 2335px;
+    background: #F6FCFF;
+}
+
+.page__header {
+    width: 1662px;
+    height: 109.62px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 26px 130px 87.38px 128px;
+}
+
+.page-header__logo {
+    width: 126px;
+    height: 109.62px;
+    flex-shrink: 0;
+}
+
+.page-header__nav {
+    width: 1011px;
+    height: 22px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 44px 146px 43.6px 200px;
+}
+
+.main-nav__sections {
+    text-decoration: none;
+    color: #404448;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main-nav__sections.pharmacists {
+    width: 165px;
+}
+
+.main-nav__sections.providers {
+    width: 135px;
+}
+
+.main-nav__sections.patients {
+    width: 128px;
+}
+
+.main-nav__sections.employers {
+    width: 149px;
+}
+
+.main-nav__sections.partners {
+    width: 203px;
+}
+
+.main-nav__sections.contact {
+    width: 81px;
+}
+
+.button-container {
+    border-radius: 50px;
+    background: #0F5174;
+    display: flex;
+    padding: 13px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px;
+}
+
+.button-container__button {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.vectors_container {
+    flex-shrink: 0;
+    opacity: 0.3;
+}
+
+.vectors_container--right {
+    transform: rotate(-90deg);
+}
+
+.vectors_container--left {
+    transform: rotate(90deg);
+}
+
+.vectors__images {
+    position: absolute;
+    z-index: -1;
+}
+
+.vectors__images--right {
+    right: 1100px;
+    top: 2px;
+}
+
+.vectors__images--left {
+    top: 1300px;
+}
+
+.page-header {
+    color: #054569;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 78px */
+    text-transform: capitalize;
+}
+
+.content {
+    display: inline-flex;
+    height: 496px;
+    width: 1660px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-shrink: 0;
+    margin: 122px 130px 174px 130px
+}
+
+.content__section {
+    display: flex;
+    width: 680px;
+    height: 232px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.content__header {
+    width: 680px;
+    color: #054569;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 58.5px */
+    text-transform: capitalize;
+}
+
+.content__img {
+    width: 820px;
+    height: 496px;
+    border-radius: 0px 50px;
+    background: url('../src/img/Rectangle 17.png'), lightgray 0px 2.015px / 100% 116.293% no-repeat;
+}
+
+.characteristics {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+    width: 1660px;
+    height: 653px;
+    margin: 174px 130px 180px 130px;
+}
+
+.characteristics__blocks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 1660px;
+    height: 518px;
+    flex-wrap: wrap;
+}
+
+.blocks__item {
+    display: flex;
+    width: 540px;
+    height: 250px;
+    padding: 20px 7px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #E7F5FF;
+}
+
+.blocks__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.blocks__container--inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.blocks__img {
+    width: 50px;
+    height: 50px;
+    fill: #054569;
+}
+
+.blocks__container__header {
+    width: 342px;
+    color: #054569;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.articles-text {
+    color: #054569;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.articles-text--large {
+    width: 680px;
+    font-size: 20px;
+}
+
+.articles-text--normal {
+    font-size: 18px;
+    width: 426px;
+}
+
+.footer-container {
+    width: 1920px;
+    height: 297px;
+    flex-shrink: 0;
+    background: #054569;
+}
+
+.footer-container--inner {
+    display: flex;
+    gap: 347px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container__powered-by {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 122px;
+    margin: 101px 0 100px 130px;
+    width: 846px;
+    height: 118px;
+}
+
+.powered-by__images {
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+    width: 278px;
+    height: 118px;
+}
+
+.powered-by__digital-logo {
+    width: 139px;
+    height: 118px;
+    background: url('../src/logo/Digital-Health-Logo-reverse-2 1.png');
+}
+
+.powered-by__logo {
+    width: 91px;
+    height: 79px;
+    background: url('../src/logo/17171798 1.png');
+}
+
+.powered-by__address {
+    color: #FFF;
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+.powered-by__address--normal {
+    font-weight: 400;
+    line-height: 176.291%;
+    font-size: 16px;
+}
+
+.powered-by__address--bold {
+    font-weight: 600;
+    line-height: 160.023%;
+    font-size: 18px;
+}
+
+.footer-container__downloads {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 44px;
+    width: 507px;
+    height: 118px;
+}
+
+.downloads__icare-logo {
+    width: 110px;
+    height: 118px;
+    background: url('../src/logo/iCarePlus-reverse 1.png');
+}
+
+.downloads__apps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    width: 353px;
+    height: 97px;
+}
+
+.apps__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 25.943px;
+}
+
+.apps__text {
+    width: 339px;
+    color: #E2E3E8;
+    font-family: Figtree;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.apps__links {
+    display: flex;
+    width: 164px;
+    height: 41.216px;
+    padding: 0px 30.608px;
+    align-items: center;
+    justify-content: center;
+    gap: 6.869px;
+    border-radius: 20.608px;
+    background: #195376;
+    position: relative;
+}
+
+.round-logo {
+    width: 24.477px;
+    height: 24.477px;
+    position: absolute;
+    left: 10.152px;
+    top: 7.293px;
+    border-radius: 50%;
+    background-size: 50%;
+}
+
+.apps__links__apple-logo {
+    background: lightgray url('../src/logo/free-icon-apple-logo-747 1.png') no-repeat center;
+}
+
+.apps__links span {
+    color: #FFF;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: normal;
+}
+
+.apps__links--light {
+    font-size: 10.304px;
+    font-weight: 300;
+}
+
+.apps__links--bold {
+    font-size: 13.739px;
+    font-weight: 400;
+}
+
+.apps__links__android-logo {
+    background: lightgray url('../src/logo/pngwing 2.png') no-repeat center;
+}
+
+.footer-container__terms {
+    width: 1920px;
+    height: 112px;
+    background: rgba(16, 66, 112, 0.92);
+    position: relative;
+}
+
+.terms__text-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 1049px;
+    margin: 47px 130px 45px 130px;
+    position: absolute;
+    width: 1660px;
+    height: 20px;
+}
+
+.terms__text-block--first {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 302px;
+    height: 20px;
+}
+
+.terms_text {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.terms__text-block__pipe {
+    width: 1px;
+    height: 19px;
+    background: rgba(255, 255, 255, 0.85);
+}
