@@ -249,7 +249,7 @@ body {
 
 .footer-container {
     width: 1920px;
-    height: 297px;
+    height: 409px;
     flex-shrink: 0;
     background: #054569;
 }
@@ -263,11 +263,10 @@ body {
 
 .footer-container__powered-by {
     display: inline-flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 122px;
-    margin: 101px 0 100px 130px;
     width: 846px;
-    height: 118px;
+    height: 297px;
 }
 
 .powered-by__images {
@@ -400,7 +399,7 @@ body {
 .footer-container__terms {
     width: 1920px;
     height: 112px;
-    background: rgba(16, 66, 112, 0.92);
+    background: rgba(105, 140, 169, 0.20);
     position: relative;
 }
 
