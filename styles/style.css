@@ -102,7 +102,6 @@ body {
 
 .page-header__nav {
     width: 80%;
-    height: 22px;
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
@@ -286,7 +285,6 @@ h1.page-header {
 .blocks__item {
     display: flex;
     width: 540px;
-    height: 250px;
     padding: 20px 7px;
     flex-direction: column;
     align-items: center;
@@ -359,7 +357,7 @@ h1.page-header {
     align-items: center;
     justify-content: center;
     gap: 20%;
-    height: 297px;
+    height: 40vh;
 }
 
 .powered-by__images {
@@ -372,13 +370,13 @@ h1.page-header {
 .powered-by__digital-logo {
     width: 139px;
     height: 118px;
-    background: url('../src/logo/Digital-Health-Logo-reverse-2 1.png');
+    background: url('../src/logo/digital_health_logo.png');
 }
 
 .powered-by__logo {
     width: 91px;
     height: 79px;
-    background: url('../src/logo/17171798 1.png');
+    background: url('../src/logo/powerByImg.png');
 }
 
 .powered-by__address {
@@ -410,7 +408,11 @@ h1.page-header {
 .downloads__icare-logo {
     width: 110px;
     height: 118px;
-    background: url('../src/logo/iCarePlus-reverse 1.png');
+    background: url('../src/logo/iCare_logo.png');
+}
+
+.downloads__icare-logo--mobile {
+    display: none;
 }
 
 .downloads__apps-container {
@@ -419,7 +421,6 @@ h1.page-header {
     align-items: flex-start;
     gap: 26px;
     width: 353px;
-    height: 97px;
 }
 
 .apps__container {
@@ -437,6 +438,10 @@ h1.page-header {
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
+}
+
+.apps__text--mobile {
+    display: none;
 }
 
 .apps__links {
@@ -462,7 +467,7 @@ h1.page-header {
 }
 
 .apps__links__apple-logo {
-    background: lightgray url('../src/logo/free-icon-apple-logo-747 1.png') no-repeat center;
+    background: lightgray url('../src/logo/free_icon_apple.png') no-repeat center;
 }
 
 .apps__links span {
@@ -484,12 +489,12 @@ h1.page-header {
 }
 
 .apps__links__android-logo {
-    background: lightgray url('../src/logo/pngwing 2.png') no-repeat center;
+    background: lightgray url('../src/logo/android_logo.png') no-repeat center;
 }
 
 .footer-container__terms {
     width: 100%;
-    height: 112px;
+    height: 15vh;
     background: rgba(105, 140, 169, 0.20);
     position: relative;
 }
@@ -552,6 +557,19 @@ h1.page-header {
 
     .content__section, .content__img {
         width: 100%;
+    }
+
+    .footer-container--inner {
+        margin-bottom: 10vw;
+        margin-top: 10vw;
+    }
+
+    .apps__links--bold {
+        font-size: 12px;
+    }
+
+    .apps__container {
+        flex-wrap: wrap;
     }
 }
 
@@ -690,7 +708,6 @@ h1.page-header {
 
     .blocks__item {
         width: 100%;
-        height: 300px;
         padding: 20px 18px;
         align-items: center;
         justify-content: center;
@@ -723,6 +740,7 @@ h1.page-header {
         gap: 77px;
         align-items: flex-start;
         justify-content: center;
+        margin-bottom: 50px;
     }
 
     .footer-container__powered-by {
@@ -730,7 +748,7 @@ h1.page-header {
         align-items: flex-start;
         justify-content: center;
         gap: 50px;
-        height: 400px;
+        height: 60vh;
     }
 
     .powered-by__images {
@@ -743,48 +761,68 @@ h1.page-header {
         width: 70%;
     }
 
-    /*.footer-container__downloads {*/
-    /*    flex-direction: column;*/
-    /*    gap: 5%;*/
-    /*    height: 181px;*/
-    /*}*/
+    .footer-container__downloads {
+        gap: 5%;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
 
-    /*.downloads__icare-logo {*/
-    /*}*/
+    .downloads--mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
 
-    /*.downloads__apps-container {*/
-    /*    flex-direction: column;*/
-    /*    gap: 54px;*/
-    /*    align-items: center;*/
-    /*    justify-content: center;*/
-    /*}*/
+    .downloads__icare-logo--desktop {
+        display: none;
+    }
 
-    /*.apps__container {*/
-    /*    align-items: center;*/
-    /*    justify-content: center;*/
-    /*    gap: 26px;*/
-    /*    flex-wrap: wrap;*/
-    /*    width: 40%;*/
-    /*}*/
+    .downloads__icare-logo--mobile {
+        display: block;
+    }
 
-    /*.apps__text {*/
-    /*    font-size: 22px;*/
-    /*}*/
+    .downloads__apps-container {
+        justify-content: center;
+        width: 100%;
+    }
 
-    /*.apps__links {*/
-    /*    padding: 0 20.608px;*/
-    /*}*/
+    .apps__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+    }
 
-    /*.round-logo {*/
-    /*    width: 15.173px;*/
-    /*    height: 15.173px;*/
-    /*    left: 3.152px;*/
-    /*    top: 7.293px;*/
-    /*    background-size: 70%;*/
-    /*}*/
+    .apps__text--desktop {
+        display: none;
+    }
 
-    .footer-container__terms {
-        height: 144px;
+    .apps__text--mobile {
+        display: flex;
+    }
+
+    .apps__text {
+        font-size: 22px;
+    }
+
+    .apps__links {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 20.608px;
+    }
+
+    .round-logo {
+        width: 22.173px;
+        height: 22.173px;
+        left: 8.152px;
+        top: 7.293px;
+        background-size: 70%;
     }
 
     .terms__text-block {
