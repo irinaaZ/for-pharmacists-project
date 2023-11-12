@@ -612,6 +612,7 @@ h1.page-header {
 
     .page__header {
         justify-content: space-between;
+        align-items: center;
     }
 
     .page-header__nav {
